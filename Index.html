@@ -12,12 +12,15 @@
     <!--responsividad-->
     <title>Monsters & Dreams</title>
     <!--se visualiza en la pestaña del navegador-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!--bootstrap-->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Monsters & Dreams</h1>
     <!--Titulo visible para el usuario-->
+
 
     <header>
         <!--Informacion de bienvenida-->
@@ -35,95 +38,121 @@
     </header>
 
     <section>
-
-        <h3>Mira lo nuevo de los artistas</h3>
-        <!--Titulo de la seccion-->
-        <ul>
-            <!--Listas Desordenadas-->
-            <!--Item de la lista-->
-            <!--Aca iria un carrousel-->
-            <li><img src="" alt="imagen 1"></li>
-            <li><img src="" alt="imagen 2"></li>
-            <li><img src="" alt="imagen 3"></li>
-            <li><img src="" alt="imagen 4"></li>
-            <li><img src="" alt="imagen 5"></li>
-        </ul>
+        <div class="container">
+            <h3>Mira lo nuevo de los artistas</h3>
+            <!--Titulo de la seccion-->
+            <ul>
+                <!--Listas Desordenadas-->
+                <!--Item de la lista-->
+                <!--Aca iria un carrousel-->
+                <li><img src="" alt="imagen 1"></li>
+                <li><img src="" alt="imagen 2"></li>
+                <li><img src="" alt="imagen 3"></li>
+                <li><img src="" alt="imagen 4"></li>
+                <li><img src="" alt="imagen 5"></li>
+            </ul>
+        </div>
     </section>
 
     <section>
+
         <h3>Contenido nuevo del Blog</h3>
         <!--Titulo de la seccion-->
+
         <nav class="sectionEnIndex">
-            <!--Contenedor para flex-->
-            <!--aca van los grupos de items del blog-->
-            <div>
-                <h4>Titulo del post</h4>
-                <!--titulo del item-->
-                <a href="Blog.html"><img src="Blog 1.png" alt="Imagen del blog"></a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatibus iusto eaque voluptates et. Sunt, asperiores dolores assumenda cum expedita placeat cumque iste? Quia fugiat earum cupiditate quasi harum est.</p>
-                <!--aca iria una descripcion-->
-            </div>
-            <div>
-                <h4>Titulo del post2</h4>
-                <!--titulo del item-->
-                <a href="Blog.html"><img src="Blog 2.png" alt="Imagen del blog2"></a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatibus iusto eaque voluptates et. Sunt, asperiores dolores assumenda cum expedita placeat cumque iste? Quia fugiat earum cupiditate quasi harum est.</p>
-                <!--aca iria una descripcion-->
-            </div>
-            <div>
-                <h4>Titulo del post3</h4>
-                <!--titulo del item-->
-                <a href="Blog.html"><img src="Blog 3.png" alt="Imagen del blog3"></a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatibus iusto eaque voluptates et. Sunt, asperiores dolores assumenda cum expedita placeat cumque iste? Quia fugiat earum cupiditate quasi harum est.</p>
-                <!--aca iria una descripcion-->
+            <!--Contenedor -->
+            <div class="container">
+                <div class="row">
+                    <!--aca van los grupos de items del blog-->
+                    <div class="col-12 col-lg-4">
+                        <!--columnas responsive para bootstrap-->
+                        <h4>Titulo del post</h4>
+                        <!--titulo del item-->
+                        <a href="Blog.html"><img src="Blog1.png" alt="Imagen del blog"></a>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatibus iusto eaque voluptates et. Sunt, asperiores dolores assumenda cum expedita placeat cumque iste? Quia fugiat earum cupiditate quasi harum est.</p>
+                        <!--aca iria una descripcion-->
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <!--columnas responsive para bootstrap-->
+                        <h4>Titulo del post2</h4>
+                        <!--titulo del item-->
+                        <a href="Blog.html"><img src="Blog2.png" alt="Imagen del blog2"></a>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatibus iusto eaque voluptates et. Sunt, asperiores dolores assumenda cum expedita placeat cumque iste? Quia fugiat earum cupiditate quasi harum est.</p>
+                        <!--aca iria una descripcion-->
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <!--columnas responsive para bootstrap-->
+                        <h4>Titulo del post3</h4>
+                        <!--titulo del item-->
+                        <a href="Blog.html"><img src="Blog3.png" alt="Imagen del blog3"></a>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatibus iusto eaque voluptates et. Sunt, asperiores dolores assumenda cum expedita placeat cumque iste? Quia fugiat earum cupiditate quasi harum est.</p>
+                        <!--aca iria una descripcion-->
+                    </div>
+                </div>
             </div>
         </nav>
+
     </section>
 
     <section>
+
         <h3>Contenido nuevo del shop</h3>
         <!--Titulo de la seccion-->
+
         <nav class="sectionEnIndex">
-            <!--Contenedor para flex-->
-            <!--aca van los grupos de items del shop-->
-            <Div>
-                <h4>Sticker Sakura</h4>
-                <!--titulo del item-->
-                <a href="Shop.html"><img src="Sticker.png" alt="imagen del producto"></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa esse, nostrum perspiciatis adipisci ducimus, eos ab, illum ratione doloribus totam fugiat voluptatibus eius optio! Ullam officiis esse fugiat aspernatur.</p>
-                <!--aca iria una descripcion-->
-            </Div>
-            <Div>
-                <h4>Taza de Cerámica</h4>
-                <!--titulo del item-->
-                <a href="Shop.html"><img src="taza.png" alt="imagen del producto2"></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa esse, nostrum perspiciatis adipisci ducimus, eos ab, illum ratione doloribus totam fugiat voluptatibus eius optio! Ullam officiis esse fugiat aspernatur.</p>
-                <!--aca iria una descripcion-->
-            </Div>
-            <Div>
-                <h4>Cuadro "Vestir para impresionar</h4>
-                <!--titulo del item-->
-                <a href="Shop.html"><img src="cuadro.png" alt="imagen del producto3"></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa esse, nostrum perspiciatis adipisci ducimus, eos ab, illum ratione doloribus totam fugiat voluptatibus eius optio! Ullam officiis esse fugiat aspernatur.</p>
-                <!--aca iria una descripcion-->
-            </Div>
+            <!--Contenedor-->
+            <div class="container">
+                <div class="row">
+                    <!--aca van los grupos de items del shop-->
+                    <Div class="col-12 col-lg-4">
+                        <!--columnas responsive para bootstrap-->
+                        <h4>Sticker Sakura</h4>
+                        <!--titulo del item-->
+                        <a href="Shop.html"><img src="Sticker.png" alt="imagen del producto"></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa esse, nostrum perspiciatis adipisci ducimus, eos ab, illum ratione doloribus totam fugiat voluptatibus eius optio! Ullam officiis esse fugiat aspernatur.</p>
+                        <!--aca iria una descripcion-->
+                    </Div>
+                    <Div class="col-12  col-lg-4">
+                        <!--columnas responsive para bootstrap-->
+                        <h4>Taza de Cerámica</h4>
+                        <!--titulo del item-->
+                        <a href="Shop.html"><img src="taza.png" alt="imagen del producto2"></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa esse, nostrum perspiciatis adipisci ducimus, eos ab, illum ratione doloribus totam fugiat voluptatibus eius optio! Ullam officiis esse fugiat aspernatur.</p>
+                        <!--aca iria una descripcion-->
+                    </Div>
+                    <Div class="col-12  col-lg-4">
+                        <!--columnas responsive para bootstrap-->
+                        <h4>Cuadro "Vestir para impresionar</h4>
+                        <!--titulo del item-->
+                        <a href="Shop.html"><img src="cuadro.png" alt="imagen del producto3"></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa esse, nostrum perspiciatis adipisci ducimus, eos ab, illum ratione doloribus totam fugiat voluptatibus eius optio! Ullam officiis esse fugiat aspernatur.</p>
+                        <!--aca iria una descripcion-->
+                    </Div>
+                </div>
+            </div>
         </nav>
 
     </section>
 
-    <footer class="footer">
-        <!--contenedor para flex-->
-        <!--pie de pagina que va en todos los html-->
-        <div>
-            <p>Redes Sociales</p>
-            <a href="https://www.instagram.com/monstersndreams/ ">Instagram</a>
-            <a href=" ">EMail</a>
-        </div>
-        <div>
-            <p>Creado por Rocio Bautista</p>
-            <p>Proyecto Final de Desarrollo Web 2021</p>
-        </div>
-    </footer>
+    <div class="contenedor">
+        <footer class="footer">
+            <!--contenedor para flex-->
+            <!--pie de pagina que va en todos los html-->
+            <div class="row">
+                <div class="col-12  col-md-6">
+                    <p>Redes Sociales</p>
+                    <a href="https://www.instagram.com/monstersndreams/ ">Instagram</a>
+                    <a href=" ">EMail</a>
+                </div>
+                <div class="col-12  col-md-6">
+                    <p>Creado por Rocio Bautista</p>
+                    <p>Proyecto Final de Desarrollo Web 2021</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -96,17 +96,8 @@ ul {
 }
 
 .sectionEnIndex {
-    /*caracteristicas del contenedor flex de las seciones en index*/
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    /*caracteristicas del contenedor de las seciones en index*/
     margin: 2rem 2rem;
-}
-
-.sectionEnIndex div {
-    /*margenes para el div de las seciones en index*/
-    margin: 1rem 1rem;
 }
 
 .sectionEnIndex div img {
