@@ -95,8 +95,13 @@ ul {
     /*eliminar viñetas y numeros de las listas*/
 }
 
+.carousel-inner {
+    margin-top: 2rem;
+}
+
 .sectionEnIndex {
     /*caracteristicas del contenedor de las seciones en index*/
+    align-items: center;
     margin: 2rem 2rem;
 }
 
@@ -268,8 +273,6 @@ ul {
     /*caracteristicas del contenedor para flex del pie de pagina */
     background-color: black;
     padding: 2rem;
-    display: flex;
-    justify-content: space-around;
 }
 
 .footer p {
