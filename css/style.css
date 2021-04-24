@@ -45,7 +45,8 @@ h1 {
     /*caracteristicas del titulo visible para el usuario*/
     color: #D1D1D1;
     text-align: center;
-    font-size: 400%;
+    font-size: 500% -100;
+    /*se aplico operacion*/
     transition: all 2s;
     /*Transicion cuando el mouse se coloca sobre ese item*/
 }
@@ -60,6 +61,7 @@ h2 {
     color: #D1D1D1;
     text-align: center;
     font-size: 250%;
+    /*se aplico operacion*/
 }
 
 h3 {
@@ -67,14 +69,16 @@ h3 {
     color: #9C8EA9;
     text-align: center;
     margin-top: 5%;
-    font-size: 200%;
+    font-size: 500% -300;
+    /*se aplico operacion*/
 }
 
 h4 {
     /*caracteristicas del titulo del item*/
     text-align: center;
     margin-bottom: 5%;
-    font-size: 150%;
+    font-size: 500% -350;
+    /*se aplico operacion*/
 }
 
 div {
@@ -283,4 +287,15 @@ ul {
 .footer a {
     text-decoration: none;
     /*eliminar subrayado de los enlaces*/
+}
+
+
+/*Creamos el bucle para usar los valores del mapa*/
+
+.btn--instagram {
+    color: #55acee;
+}
+
+.btn--email {
+    color: #C25E30;
 }
