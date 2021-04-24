@@ -14,7 +14,7 @@
     <!--se visualiza en la pestaña del navegador-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <!--bootstrap-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -27,11 +27,11 @@
         <nav class="menu">
             <!--contenedor flex-->
             <!--Menu navegacion-->
-            <a class="menu_titulos" href="Index.html">Home</a>
-            <a class="menu_titulos" href="Artistas.html">Artistas</a>
-            <a class="menu_titulos" href="Blog.html">Blog</a>
-            <a class="menu_titulos" href="Shop.html">Shop</a>
-            <a class="menu_titulos" href="FAQ.html">FAQ</a>
+            <a class="menu__titulos" href="Index.html">Home</a>
+            <a class="menu__titulos" href="Artistas.html">Artistas</a>
+            <a class="menu__titulos" href="Blog.html">Blog</a>
+            <a class="menu__titulos" href="Shop.html">Shop</a>
+            <a class="menu__titulos" href="FAQ.html">FAQ</a>
         </nav>
         <h2>FAQ</h2>
         <!--titulo del html visible para el usuario-->
@@ -60,25 +60,25 @@
         <!--Formulario-->
         <h3>Escribinos</h3>
         <!--Titulo de la seccion-->
-        <nav class="grid-Contenedor-Form">
+        <nav class="form">
             <!--contenedor para grid-->
             <!--Elementos del formulario-->
-            <div class="formNombre">
+            <div class="form__nombre">
                 <!--subcontenedor para grid-->
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" placeholder="Ingresar Nombre" id="nombre">
             </div>
-            <div class="formApellido">
+            <div class="form__apellido">
                 <!--subcontenedor para grid-->
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido" placeholder="Ingresar Apellido" id="apellido">
             </div>
-            <div class="formEmail">
+            <div class="form__email">
                 <!--subcontenedor para grid-->
                 <label for="email">Email</label>
                 <input type="text" name="email" placeholder="Ingresar email" id="email">
             </div>
-            <div class="formComonosconociste">
+            <div class="form__comonosconociste">
                 <!--subcontenedor para grid-->
                 <label for="¿Como nos conociste?">¿Como nos conociste?</label>
                 <select name="¿Como nos conociste?"> 
@@ -89,19 +89,19 @@
                  </select>
             </div>
 
-            <div class="formComentarios">
+            <div class="form__comentarios">
                 <!--subcontenedor para grid-->
                 <label for="Comentarios">Comentarios</label>
                 <textarea name="Comentarios" plaeholder="Comentarios" id="comentarios" cols="30" rows="10"></textarea>
             </div>
 
 
-            <div class="formNewsletter">
+            <div class="form__Newsletter">
                 <!--subcontenedor para grid-->
                 <label for="newsletter">Desea susbribirse al newsletter?</label>
                 <input type="checkbox" name="newsletter" id="newsletter"></div>
 
-            <div class="formEnviar">
+            <div class="form__Enviar">
                 <!--subcontenedor para grid-->
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpiar Formulario">
