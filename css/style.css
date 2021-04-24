@@ -1,301 +1,219 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web&display=swap");
 * {
-    /*reseteo CSS*/
-    margin: 0;
-    padding: 0;
-    font-family: 'Anton', sans-serif;
-}
+  /*reseteo CSS*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Anton', sans-serif; }
 
 body {
-    background-color: #403B4A;
-    /*color de fondo*/
-}
+  background-color: #403B4A;
+  /*color de fondo*/ }
 
 .menu {
-    /*caracteristicas del contenedor flex del menu*/
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1rem 0;
-    padding: 2rem 2rem;
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #000000, #403B4A);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000000, #403B4A);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.menu .menu__titulos {
+  /*caracteristicas del contenedor flex del menu*/
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+  padding: 2rem 2rem;
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #000000, #403B4A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #000000, #403B4A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .menu .menu__titulos {
     /*caracteristicas del menu*/
     color: #E1D1F0;
     text-decoration: none;
     /*eliminar subrayado de los enlaces*/
     transition: all 0.5s;
-    /*Transicion cuando el mouse se coloca sobre ese item*/
-}
-
-.menu .menu__titulos:hover {
+    /*Transicion cuando el mouse se coloca sobre ese item*/ }
+  .menu .menu__titulos:hover {
     /*caracteristicas de la transicion*/
     color: #9C8EA9;
-    font-style: italic;
-}
+    font-style: italic; }
 
 h1 {
-    /*caracteristicas del titulo visible para el usuario*/
-    color: #D1D1D1;
-    text-align: center;
-    font-size: 500% -100;
-    /*se aplico operacion*/
-    transition: all 2s;
-    /*Transicion cuando el mouse se coloca sobre ese item*/
-}
+  /*caracteristicas del titulo visible para el usuario*/
+  color: #D1D1D1;
+  text-align: center;
+  font-size: 500% -100;
+  /*se aplico operacion*/
+  transition: all 2s;
+  /*Transicion cuando el mouse se coloca sobre ese item*/ }
 
 h1:hover {
-    /*caracteristicas de la transicion*/
-    font-size: 500%;
-}
+  /*caracteristicas de la transicion*/
+  font-size: 500%; }
 
 h2 {
-    /*caracteristicas del titulo del html visible para el usuario*/
-    color: #D1D1D1;
-    text-align: center;
-    font-size: 250%;
-    /*se aplico operacion*/
-}
+  /*caracteristicas del titulo del html visible para el usuario*/
+  color: #D1D1D1;
+  text-align: center;
+  font-size: 250%;
+  /*se aplico operacion*/ }
 
 h3 {
-    /*caracteristicas del titulo de la seccion*/
-    color: #9C8EA9;
-    text-align: center;
-    margin-top: 5%;
-    font-size: 500% -300;
-    /*se aplico operacion*/
-}
+  /*caracteristicas del titulo de la seccion*/
+  color: #9C8EA9;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 500% -300;
+  /*se aplico operacion*/ }
 
 h4 {
-    /*caracteristicas del titulo del item*/
-    text-align: center;
-    margin-bottom: 5%;
-    font-size: 500% -350;
-    /*se aplico operacion*/
-}
+  /*caracteristicas del titulo del item*/
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 500% -350;
+  /*se aplico operacion*/ }
 
 div {
-    color: #1652a1;
-    /*caracteristicas dentro de los div*/
-}
+  color: #1652a1;
+  /*caracteristicas dentro de los div*/ }
 
 p {
-    /*caracteristicas del texto p*/
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-    text-align: left;
-}
+  /*caracteristicas del texto p*/
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  text-align: left; }
 
 ul {
-    list-style-type: none;
-    /*eliminar viñetas y numeros de las listas*/
-}
+  list-style-type: none;
+  /*eliminar viñetas y numeros de las listas*/ }
 
 .carousel-inner {
-    margin-top: 2rem;
-}
+  margin-top: 2rem; }
 
 .sectionEnIndex {
-    /*caracteristicas del contenedor de las seciones en index*/
-    align-items: center;
-    margin: 2rem 2rem;
-}
-
-.sectionEnIndex div img {
+  /*caracteristicas del contenedor de las seciones en index*/
+  align-items: center;
+  margin: 2rem 2rem; }
+  .sectionEnIndex div img {
     display: block;
     /*pasar elemento en linea a bloque*/
     margin: auto;
-    /*margen en auto para poder centrar el elemento*/
-}
+    /*margen en auto para poder centrar el elemento*/ }
 
 .sectionEnArtistas {
-    /*caracteristicas del contenedor flex de las secciones en artistas*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 2rem;
-}
-
-.sectionEnArtistas .sectionEnArtistas__div {
-    /*margenes para el div de las secciones en artistas*/
-    margin: 1rem 1rem;
-}
-
-.sectionEnArtistas .sectionEnArtistas__div iframe {
+  /*caracteristicas del contenedor flex de las secciones en artistas*/
+  align-items: center;
+  margin: 2rem 2rem; }
+  .sectionEnArtistas div iframe {
     display: block;
     /*pasar elemento en linea a bloque*/
     margin: auto;
-    /*margen en auto para poder centrar el elemento*/
-}
-
-.sectionEnArtistas .sectionEnArtistas__div img {
+    /*margen en auto para poder centrar el elemento*/ }
+  .sectionEnArtistas div img {
     display: block;
     /*pasar elemento en linea a bloque*/
     margin: auto;
-    /*margen en auto para poder centrar el elemento*/
-}
+    /*margen en auto para poder centrar el elemento*/ }
 
 .sectionEnBlog {
-    /*caracteristicas del contenedor flex de las secciones en blog*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 2rem;
-}
-
-.sectionEnBlog div {
-    /*margenes para el div de las secciones en blog*/
-    margin: 1rem 1rem;
-}
-
-.sectionEnBlog div img {
+  /*caracteristicas del contenedor flex de las secciones en blog*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem; }
+  .sectionEnBlog div img {
     display: block;
     /*pasar elemento en linea a bloque*/
     margin: auto;
-    /*margen en auto para poder centrar el elemento*/
-}
+    /*margen en auto para poder centrar el elemento*/ }
 
 .navEnFAQ {
-    /*caracteristicas del contenedor flex del nav en FAQ*/
-    display: flex;
-    flex-direction: column;
-    /*apilar los items en columna*/
-}
+  /*caracteristicas del contenedor flex del nav en FAQ*/
+  display: flex;
+  flex-direction: column;
+  /*apilar los items en columna*/ }
 
 .form {
-    /*caracteristicas del contenedor para grid del formulario*/
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 12 columnas */
-    grid-template-rows: repeat(8, 1fr);
-    /* 8 filas */
-    margin-top: 2%;
-}
-
-.form .form__nombre {
+  /*caracteristicas del contenedor para grid del formulario*/
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* 12 columnas */
+  grid-template-rows: repeat(8, 1fr);
+  /* 8 filas */
+  margin-top: 2%; }
+  .form .form__nombre {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 2/8;
     grid-row: 1/2;
     display: flex;
-    flex-direction: column;
-}
-
-.form .form__apellido {
+    flex-direction: column; }
+  .form .form__apellido {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 2/8;
     grid-row: 2/3;
     display: flex;
-    flex-direction: column;
-}
-
-.form .form__email {
+    flex-direction: column; }
+  .form .form__email {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 2/8;
     grid-row: 3/4;
     display: flex;
-    flex-direction: column;
-}
-
-.form .form__comonosconociste {
+    flex-direction: column; }
+  .form .form__comonosconociste {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 2/8;
     grid-row: 4/5;
     display: flex;
-    flex-direction: column;
-}
-
-.form .form__comentarios {
+    flex-direction: column; }
+  .form .form__comentarios {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 2/8;
     grid-row: 5/7;
     display: flex;
-    flex-direction: column;
-}
-
-.form .form__Newsletter {
+    flex-direction: column; }
+  .form .form__Newsletter {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 2/8;
-    grid-row: 7/8;
-}
-
-.form .form__Enviar {
+    grid-row: 7/8; }
+  .form .form__Enviar {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 2/8;
-    grid-row: 8/9;
-}
-
-.form label {
+    grid-row: 8/9; }
+  .form label {
     /*tamaño de fuente de los labels del formulario */
-    font-size: 150%;
-}
+    font-size: 150%; }
 
 .contenedorEnShop {
-    /*caracteristicas del contenedor para grid de los items del shop*/
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 12 columnas */
-    grid-template-rows: repeat(12, 1fr);
-    /* 12 filas */
-    /*gap: 10px;*/
-}
-
-.contenedorEnShop h4 {
+  /*caracteristicas del contenedor para grid de los items del shop*/
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* 12 columnas */
+  grid-template-rows: repeat(12, 1fr);
+  /* 12 filas */
+  /*gap: 10px;*/ }
+  .contenedorEnShop h4 {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 2/13;
-    grid-row: 1/13;
-}
-
-.contenedorEnShop .contenedorEnShop__izq {
+    grid-row: 1/13; }
+  .contenedorEnShop .contenedorEnShop__izq {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 2/6;
-    grid-row: 2/12;
-}
-
-.contenedorEnShop .contenedorEnShop__concepto {
+    grid-row: 2/12; }
+  .contenedorEnShop .contenedorEnShop__concepto {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 6/7;
     grid-row: 2/12;
-    background-color: #D1D1D1;
-}
-
-.contenedorEnShop .contenedorEnShop__detalles {
+    background-color: #D1D1D1; }
+  .contenedorEnShop .contenedorEnShop__detalles {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 7/12;
     grid-row: 2/12;
-    background-color: #D1D1D1;
-}
+    background-color: #D1D1D1; }
 
 .footer {
-    /*caracteristicas del contenedor para flex del pie de pagina */
-    background-color: black;
-    padding: 2rem;
-}
-
-.footer p {
+  /*caracteristicas del contenedor para flex del pie de pagina */
+  background-color: black;
+  padding: 2rem; }
+  .footer p {
     /*caracteristicas del texto p dentro del pie de pagina*/
-    color: #D1D1D1;
-}
-
-.footer a {
+    color: #D1D1D1; }
+  .footer a {
     text-decoration: none;
-    /*eliminar subrayado de los enlaces*/
-}
-
-
-/*Creamos el bucle para usar los valores del mapa*/
-
-.btn--instagram {
-    color: #55acee;
-}
-
-.btn--email {
-    color: #C25E30;
-}
+    /*eliminar subrayado de los enlaces*/ }
