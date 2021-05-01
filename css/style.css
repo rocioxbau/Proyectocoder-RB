@@ -12,24 +12,24 @@ body {
 
 .menu {
   /*caracteristicas del contenedor flex del menu*/
-  display: flex;
-  justify-content: space-evenly;
   margin: 1rem 0;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   background: #000000;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #000000, #403B4A);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #000000, #403B4A);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-  .menu .menu__titulos {
-    /*caracteristicas del menu*/
-    color: #E1D1F0;
-    text-decoration: none;
-    /*eliminar subrayado de los enlaces*/
+  .menu .navbar-dark .navbar-nav .active > .nav-link,
+  .menu .navbar-dark .navbar-nav .nav-link.active,
+  .menu .navbar-dark .navbar-nav .nav-link.show,
+  .menu .navbar-dark .navbar-nav .show > .nav-link {
+    color: #E1D1F0; }
+  .menu .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5);
     transition: all 0.5s;
     /*Transicion cuando el mouse se coloca sobre ese item*/ }
-  .menu .menu__titulos:hover {
+  .menu .navbar-dark .navbar-nav .nav-link:hover {
     /*caracteristicas de la transicion*/
     color: #9C8EA9;
     font-style: italic; }
@@ -84,8 +84,10 @@ ul {
   list-style-type: none;
   /*eliminar viñetas y numeros de las listas*/ }
 
-.carousel-inner {
-  margin-top: 2rem; }
+#carousel {
+  max-width: 600px; }
+  #carousel .carousel-inner {
+    margin-top: 2rem; }
 
 .sectionEnIndex {
   /*caracteristicas del contenedor de las seciones en index*/

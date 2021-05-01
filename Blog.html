@@ -26,17 +26,25 @@
     <!--Titulo visible para el usuario-->
     <header>
         <!--Informacion de bienvenida-->
-        <img src="" alt="Logotipo">
-
-        <nav class="menu">
-            <!--contenedor flex-->
-            <!--Menu navegacion-->
-            <a class="menu__titulos" href="Index.html">Home</a>
-            <a class="menu__titulos" href="Artistas.html">Artistas</a>
-            <a class="menu__titulos" href="Blog.html">Blog</a>
-            <a class="menu__titulos" href="Shop.html">Shop</a>
-            <a class="menu__titulos" href="FAQ.html">FAQ</a>
-        </nav>
+        <div class="menu">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <a class="navbar-brand">
+                    <img src="images/icono.svg" width="40" height="50" alt="icono">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="Artistas.html">Artistas</a>
+                        <a class="nav-link active" href="Blog.html">Blog</a>
+                        <a class="nav-link" href="Shop.html">Shop</a>
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <h2>Blog</h2>
         <!--titulo del html visible para el usuario-->
 
