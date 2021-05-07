@@ -119,6 +119,14 @@
                                 margin: auto;
                                 /*margen en auto para poder centrar el elemento*/
                             }
+                            .btn-primary {
+                                color: #1652a1;
+                                background-color: #9C8EA9;
+                                border-color: #9C8EA9;
+                                width: 67%;
+                                margin-left: auto;
+                                margin-right: auto;
+                            }
                         }
                         
                         .sectionEnArtistas {
@@ -165,7 +173,7 @@
                             display: grid;
                             grid-template-columns: repeat(12, 1fr);
                             /* 12 columnas */
-                            grid-template-rows: repeat(8, 1fr);
+                            grid-template-rows: repeat(8, 110px);
                             /* 8 filas */
                             margin-top: 2%;
                             .form__nombre {
@@ -212,10 +220,24 @@
                                 /*caracteristicas del subcontenedor para grid */
                                 grid-column: 2/8;
                                 grid-row: 8/9;
+                                .btn-primary {
+                                    color: #1652a1;
+                                    background-color: white;
+                                    border-color: white;
+                                }
                             }
                             label {
                                 /*tamaño de fuente de los labels del formulario */
                                 font-size: 150%;
+                            }
+                        }
+                        
+                        .card {
+                            background-color: #E1D1F0;
+                            .btn-primary {
+                                color: #1652a1;
+                                background-color: white;
+                                border-color: white;
                             }
                         }
                         
@@ -227,27 +249,15 @@
                             grid-template-rows: repeat(12, 1fr);
                             /* 12 filas */
                             /*gap: 10px;*/
-                            h4 {
-                                /*caracteristicas del subcontenedor para grid */
-                                grid-column: 2/13;
-                                grid-row: 1/13;
-                            }
-                            .contenedorEnShop__izq {
-                                /*caracteristicas del subcontenedor para grid */
-                                grid-column: 2/6;
-                                grid-row: 2/12;
-                            }
                             .contenedorEnShop__concepto {
                                 /*caracteristicas del subcontenedor para grid */
-                                grid-column: 6/7;
-                                grid-row: 2/12;
-                                background-color: #D1D1D1;
+                                grid-column: 1/6;
+                                grid-row: 1/12;
                             }
                             .contenedorEnShop__detalles {
                                 /*caracteristicas del subcontenedor para grid */
                                 grid-column: 7/12;
-                                grid-row: 2/12;
-                                background-color: #D1D1D1;
+                                grid-row: 1/12;
                             }
                         }
                         

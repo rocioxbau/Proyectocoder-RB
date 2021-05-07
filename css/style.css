@@ -98,6 +98,13 @@ ul {
     /*pasar elemento en linea a bloque*/
     margin: auto;
     /*margen en auto para poder centrar el elemento*/ }
+  .sectionEnIndex .btn-primary {
+    color: #1652a1;
+    background-color: #9C8EA9;
+    border-color: #9C8EA9;
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto; }
 
 .sectionEnArtistas {
   /*caracteristicas del contenedor flex de las secciones en artistas*/
@@ -137,7 +144,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   /* 12 columnas */
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 110px);
   /* 8 filas */
   margin-top: 2%; }
   .form .form__nombre {
@@ -178,9 +185,20 @@ ul {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 2/8;
     grid-row: 8/9; }
+    .form .form__Enviar .btn-primary {
+      color: #1652a1;
+      background-color: white;
+      border-color: white; }
   .form label {
     /*tamaño de fuente de los labels del formulario */
     font-size: 150%; }
+
+.card {
+  background-color: #E1D1F0; }
+  .card .btn-primary {
+    color: #1652a1;
+    background-color: white;
+    border-color: white; }
 
 .contenedorEnShop {
   /*caracteristicas del contenedor para grid de los items del shop*/
@@ -190,24 +208,14 @@ ul {
   grid-template-rows: repeat(12, 1fr);
   /* 12 filas */
   /*gap: 10px;*/ }
-  .contenedorEnShop h4 {
-    /*caracteristicas del subcontenedor para grid */
-    grid-column: 2/13;
-    grid-row: 1/13; }
-  .contenedorEnShop .contenedorEnShop__izq {
-    /*caracteristicas del subcontenedor para grid */
-    grid-column: 2/6;
-    grid-row: 2/12; }
   .contenedorEnShop .contenedorEnShop__concepto {
     /*caracteristicas del subcontenedor para grid */
-    grid-column: 6/7;
-    grid-row: 2/12;
-    background-color: #D1D1D1; }
+    grid-column: 1/6;
+    grid-row: 1/12; }
   .contenedorEnShop .contenedorEnShop__detalles {
     /*caracteristicas del subcontenedor para grid */
     grid-column: 7/12;
-    grid-row: 2/12;
-    background-color: #D1D1D1; }
+    grid-row: 1/12; }
 
 .footer {
   /*caracteristicas del contenedor para flex del pie de pagina */
