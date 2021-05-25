@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <!--bootstrap-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icono.svg" type="image/x-icon">
+
 </head>
 
 <body>
@@ -72,61 +74,63 @@
 
         </div>
     </nav>
-    <form action="">
-        <!--Formulario-->
-        <h3>Escribinos</h3>
-        <!--Titulo de la seccion-->
-        <nav class="form">
+    <div class="container">
+        <form action="">
+            <!--Formulario-->
+            <h3>Escribinos</h3>
+            <!--Titulo de la seccion-->
 
-            <!--contenedor para grid-->
-            <!--Elementos del formulario-->
-            <div class="form__nombre">
-                <!--subcontenedor para grid-->
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" placeholder="Ingresar Nombre" id="nombre">
-            </div>
-            <div class="form__apellido">
-                <!--subcontenedor para grid-->
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" placeholder="Ingresar Apellido" id="apellido">
-            </div>
-            <div class="form__email">
-                <!--subcontenedor para grid-->
-                <label for="email">Email</label>
-                <input type="text" name="email" placeholder="Ingresar email" id="email">
-            </div>
-            <div class="form__comonosconociste">
-                <!--subcontenedor para grid-->
-                <label for="¿Como nos conociste?">¿Como nos conociste?</label>
-                <select name="¿Como nos conociste?"> 
+            <nav class="form">
+
+                <!--contenedor para grid-->
+                <!--Elementos del formulario-->
+                <div class="form__nombre">
+                    <!--subcontenedor para grid-->
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Ingresar Nombre" id="nombre">
+                </div>
+                <div class="form__apellido">
+                    <!--subcontenedor para grid-->
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Ingresar Apellido" id="apellido">
+                </div>
+                <div class="form__email">
+                    <!--subcontenedor para grid-->
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Ingresar email" id="email">
+                </div>
+                <div class="form__comonosconociste">
+                    <!--subcontenedor para grid-->
+                    <label for="¿Como nos conociste?">¿Como nos conociste?</label>
+                    <select name="¿Como nos conociste?"> 
                     <!--lista desplegable-->
                    <option value="Instragram">Instagram</option>
                    <option value="amigo">Amigo</option>
                    <option value="publicidad en web">publicidad en web</option>
                  </select>
-            </div>
+                </div>
 
-            <div class="form__comentarios">
-                <!--subcontenedor para grid-->
-                <label for="Comentarios">Comentarios</label>
-                <textarea name="Comentarios" plaeholder="Comentarios" id="comentarios" cols="30" rows="10"></textarea>
-            </div>
+                <div class="form__comentarios">
+                    <!--subcontenedor para grid-->
+                    <label for="Comentarios">Comentarios</label>
+                    <textarea name="Comentarios" plaeholder="Comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                </div>
 
 
-            <div class="form__Newsletter">
-                <!--subcontenedor para grid-->
-                <label for="newsletter">Desea susbribirse al newsletter?</label>
-                <input type="checkbox" name="newsletter" id="newsletter"></div>
+                <div class="form__Newsletter">
+                    <!--subcontenedor para grid-->
+                    <label for="newsletter">Desea susbribirse al newsletter?</label>
+                    <input type="checkbox" name="newsletter" id="newsletter"></div>
 
-            <div class="form__Enviar">
-                <!--subcontenedor para grid-->
+                <div class="form__Enviar">
+                    <!--subcontenedor para grid-->
 
-                <input class="btn btn-primary" type="submit" value="Enviar">
-                <input class="btn btn-primary" type="reset" value="Limpiar Formulario">
-            </div>
-        </nav>
-
-    </form>
+                    <input class="btn btn-primary" type="submit" value="Enviar">
+                    <input class="btn btn-primary" type="reset" value="Limpiar Formulario">
+                </div>
+            </nav>
+        </form>
+    </div>
     <footer class="footer">
         <!--contenedor para flex-->
         <!--pie de pagina que va en todos los html-->
