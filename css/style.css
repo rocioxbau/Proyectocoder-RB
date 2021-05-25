@@ -70,7 +70,7 @@ h4 {
   /*se aplico operacion*/ }
 
 div {
-  color: #1652a1;
+  color: #a7b1dd;
   /*caracteristicas dentro de los div*/ }
 
 p {
@@ -99,7 +99,7 @@ ul {
     margin: auto;
     /*margen en auto para poder centrar el elemento*/ }
   .sectionEnIndex .btn-primary {
-    color: #1652a1;
+    color: whitesmoke;
     background-color: #9C8EA9;
     border-color: #9C8EA9;
     width: 67%;
@@ -114,7 +114,9 @@ ul {
     display: block;
     /*pasar elemento en linea a bloque*/
     margin: auto;
-    /*margen en auto para poder centrar el elemento*/ }
+    /*margen en auto para poder centrar el elemento*/
+    width: 350px;
+    height: 200px; }
   .sectionEnArtistas div img {
     display: block;
     /*pasar elemento en linea a bloque*/
@@ -139,11 +141,17 @@ ul {
   flex-direction: column;
   /*apilar los items en columna*/ }
 
+@media screen and (min-width: 320px) {
+  .form {
+    grid-template-columns: repeat(1, 400PX); } }
+
+@media screen and (min-width: 1024px) {
+  .form {
+    grid-template-columns: repeat(1, 600PX); } }
+
 .form {
   /*caracteristicas del contenedor para grid del formulario*/
   display: grid;
-  grid-template-columns: repeat(1, 400px);
-  /* 12 columnas */
   grid-template-rows: repeat(8, 100px);
   /* 8 filas */
   margin: 0 auto;
@@ -188,36 +196,19 @@ ul {
     grid-row: 8/9;
     margin: 0 auto; }
     .form .form__Enviar .btn-primary {
-      color: #1652a1;
-      background-color: white;
-      border-color: white; }
+      color: whitesmoke;
+      background-color: #9C8EA9;
+      border-color: #9C8EA9; }
   .form label {
     /*tamaño de fuente de los labels del formulario */
     font-size: 150%; }
 
 .card {
-  background-color: #E1D1F0; }
+  background-color: whitesmoke; }
   .card .btn-primary {
-    color: #1652a1;
-    background-color: white;
-    border-color: white; }
-
-.contenedorEnShop {
-  /*caracteristicas del contenedor para grid de los items del shop*/
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  /* 12 columnas */
-  grid-template-rows: repeat(12, 1fr);
-  /* 12 filas */
-  /*gap: 10px;*/ }
-  .contenedorEnShop .contenedorEnShop__concepto {
-    /*caracteristicas del subcontenedor para grid */
-    grid-column: 1/6;
-    grid-row: 1/12; }
-  .contenedorEnShop .contenedorEnShop__detalles {
-    /*caracteristicas del subcontenedor para grid */
-    grid-column: 7/12;
-    grid-row: 1/12; }
+    color: whitesmoke;
+    background-color: #9C8EA9;
+    border-color: #9C8EA9; }
 
 .footer {
   /*caracteristicas del contenedor para flex del pie de pagina */
@@ -226,6 +217,7 @@ ul {
   .footer p {
     /*caracteristicas del texto p dentro del pie de pagina*/
     color: #D1D1D1; }
-  .footer a {
-    text-decoration: none;
-    /*eliminar subrayado de los enlaces*/ }
+  .footer img {
+    margin: 0 10px;
+    width: 30px;
+    height: 40px; }
