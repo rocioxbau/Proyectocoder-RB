@@ -1,271 +1,271 @@
-                        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web&display=swap');
-                        * {
-                            /*reseteo CSS*/
-                            margin: 0;
-                            padding: 0;
-                            font-family: 'Anton', sans-serif;
-                        }
-                        
-                        body {
-                            background-color: #403B4A;
-                            /*color de fondo*/
-                        }
-                        
-                        .menu {
-                            /*caracteristicas del contenedor flex del menu*/
-                            margin: 1rem 0;
-                            padding: 1rem 1rem;
-                            background: #000000;
-                            /* fallback for old browsers */
-                            background: -webkit-linear-gradient(to bottom, #000000, #403B4A);
-                            /* Chrome 10-25, Safari 5.1-6 */
-                            background: linear-gradient(to bottom, #000000, #403B4A);
-                            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                            .navbar-dark {
-                                .navbar-nav {
-                                    .active>.nav-link,
-                                    .nav-link.active,
-                                    .nav-link.show,
-                                    .show>.nav-link {
-                                        color: #E1D1F0;
-                                    }
-                                    .nav-link {
-                                        color: rgba(255, 255, 255, .5);
-                                        transition: all 0.5s;
-                                        /*Transicion cuando el mouse se coloca sobre ese item*/
-                                    }
-                                    .nav-link:hover {
-                                        /*caracteristicas de la transicion*/
-                                        color: #9C8EA9;
-                                        font-style: italic;
-                                    }
-                                }
-                            }
-                        }
-                        
-                        $tamañofuente: 500%;
-                        h1 {
-                            /*caracteristicas del titulo visible para el usuario*/
-                            color: #D1D1D1;
-                            text-align: center;
-                            font-size: $tamañofuente -100;
-                            /*se aplico operacion*/
-                            transition: all 2s;
-                            /*Transicion cuando el mouse se coloca sobre ese item*/
-                        }
-                        
-                        h1:hover {
-                            /*caracteristicas de la transicion*/
-                            font-size: $tamañofuente;
-                        }
-                        
-                        h2 {
-                            /*caracteristicas del titulo del html visible para el usuario*/
-                            color: #D1D1D1;
-                            text-align: center;
-                            font-size: $tamañofuente /2;
-                            /*se aplico operacion*/
-                        }
-                        
-                        h3 {
-                            /*caracteristicas del titulo de la seccion*/
-                            color: #9C8EA9;
-                            text-align: center;
-                            margin-top: 5%;
-                            font-size: $tamañofuente -300;
-                            /*se aplico operacion*/
-                        }
-                        
-                        h4 {
-                            /*caracteristicas del titulo del item*/
-                            text-align: center;
-                            margin-bottom: 5%;
-                            font-size: $tamañofuente -350;
-                            /*se aplico operacion*/
-                        }
-                        
-                        div {
-                            color: rgb(167, 177, 221);
-                            /*caracteristicas dentro de los div*/
-                        }
-                        
-                        p {
-                            /*caracteristicas del texto p*/
-                            color: white;
-                            font-family: 'Titillium Web', sans-serif;
-                            font-size: 20px;
-                            text-align: left;
-                        }
-                        
-                        ul {
-                            list-style-type: none;
-                            /*eliminar viñetas y numeros de las listas*/
-                        }
-                        
-                        #carousel {
-                            max-width: 600px;
-                            .carousel-inner {
-                                margin-top: 2rem;
-                            }
-                        }
-                        
-                        .sectionEnIndex {
-                            /*caracteristicas del contenedor de las seciones en index*/
-                            align-items: center;
-                            margin: 2rem 2rem;
-                            div img {
-                                display: block;
-                                /*pasar elemento en linea a bloque*/
-                                margin: auto;
-                                /*margen en auto para poder centrar el elemento*/
-                            }
-                            .btn-primary {
-                                color: whitesmoke;
-                                background-color: #9C8EA9;
-                                border-color: #9C8EA9;
-                                width: 67%;
-                                margin-left: auto;
-                                margin-right: auto;
-                            }
-                        }
-                        
-                        .sectionEnArtistas {
-                            /*caracteristicas del contenedor flex de las secciones en artistas*/
-                            align-items: center;
-                            margin: 2rem 2rem;
-                            div iframe {
-                                display: block;
-                                /*pasar elemento en linea a bloque*/
-                                margin: auto;
-                                /*margen en auto para poder centrar el elemento*/
-                                width: 350px;
-                                height: 200px;
-                            }
-                            div img {
-                                display: block;
-                                /*pasar elemento en linea a bloque*/
-                                margin: auto;
-                                /*margen en auto para poder centrar el elemento*/
-                            }
-                        }
-                        
-                        .sectionEnBlog {
-                            /*caracteristicas del contenedor flex de las secciones en blog*/
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            margin: 2rem 2rem;
-                            div img {
-                                display: block;
-                                /*pasar elemento en linea a bloque*/
-                                margin: auto;
-                                /*margen en auto para poder centrar el elemento*/
-                            }
-                        }
-                        
-                        .navEnFAQ {
-                            /*caracteristicas del contenedor flex del nav en FAQ*/
-                            display: flex;
-                            flex-direction: column;
-                            /*apilar los items en columna*/
-                        }
-                        
-                        @media screen and (min-width: 320px) {
-                            .form {
-                                grid-template-columns: repeat(1, 400PX);
-                            }
-                        }
-                        
-                        @media screen and (min-width:1024px) {
-                            .form {
-                                grid-template-columns: repeat(1, 600PX);
-                            }
-                        }
-                        
-                        .form {
-                            /*caracteristicas del contenedor para grid del formulario*/
-                            display: grid;
-                            grid-template-rows: repeat(8, 100px);
-                            /* 8 filas */
-                            margin: 0 auto;
-                            justify-content: center;
-                            .form__nombre {
-                                /*caracteristicas del subcontenedor para grid */
-                                grid-column: 1/2;
-                                grid-row: 1/2;
-                                display: flex;
-                                flex-direction: column;
-                            }
-                            .form__apellido {
-                                /*caracteristicas del subcontenedor para grid */
-                                grid-column: 1/2;
-                                grid-row: 2/3;
-                                display: flex;
-                                flex-direction: column;
-                            }
-                            .form__email {
-                                /*caracteristicas del subcontenedor para grid */
-                                grid-column: 1/2;
-                                grid-row: 3/4;
-                                display: flex;
-                                flex-direction: column;
-                            }
-                            .form__comonosconociste {
-                                /*caracteristicas del subcontenedor para grid */
-                                grid-column: 1/2;
-                                grid-row: 4/5;
-                                display: flex;
-                                flex-direction: column;
-                            }
-                            .form__comentarios {
-                                /*caracteristicas del subcontenedor para grid */
-                                grid-column: 1/2;
-                                grid-row: 5/7;
-                                display: flex;
-                                flex-direction: column;
-                            }
-                            .form__Newsletter {
-                                /*caracteristicas del subcontenedor para grid */
-                                grid-column: 1/2;
-                                grid-row: 7/8;
-                            }
-                            .form__Enviar {
-                                /*caracteristicas del subcontenedor para grid */
-                                grid-column: 1/2;
-                                grid-row: 8/9;
-                                margin: 0 auto;
-                                .btn-primary {
-                                    color: whitesmoke;
-                                    background-color: #9C8EA9;
-                                    border-color: #9C8EA9;
-                                }
-                            }
-                            label {
-                                /*tamaño de fuente de los labels del formulario */
-                                font-size: 150%;
-                            }
-                        }
-                        
-                        .card {
-                            background-color: whitesmoke;
-                            .btn-primary {
-                                color: whitesmoke;
-                                background-color: #9C8EA9;
-                                border-color: #9C8EA9;
-                            }
-                        }
-                        
-                        .footer {
-                            /*caracteristicas del contenedor para flex del pie de pagina */
-                            background-color: black;
-                            padding: 2rem;
-                            p {
-                                /*caracteristicas del texto p dentro del pie de pagina*/
-                                color: #D1D1D1;
-                            }
-                            img {
-                                margin: 0 10px;
-                                width: 30px;
-                                height: 40px;
-                            }
-                        }
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web&display=swap');
+* {
+    /*reseteo CSS*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+}
+
+body {
+    background-color: #403B4A;
+    /*color de fondo*/
+}
+
+.menu {
+    /*caracteristicas del contenedor flex del menu*/
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000000, #403B4A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000000, #403B4A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .navbar-dark {
+        .navbar-nav {
+            .active>.nav-link,
+            .nav-link.active,
+            .nav-link.show,
+            .show>.nav-link {
+                color: #E1D1F0;
+            }
+            .nav-link {
+                color: rgba(255, 255, 255, .5);
+                transition: all 0.5s;
+                /*Transicion cuando el mouse se coloca sobre ese item*/
+            }
+            .nav-link:hover {
+                /*caracteristicas de la transicion*/
+                color: #9C8EA9;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+$tamañofuente: 500%;
+h1 {
+    /*caracteristicas del titulo visible para el usuario*/
+    color: #D1D1D1;
+    text-align: center;
+    font-size: $tamañofuente -100;
+    /*se aplico operacion*/
+    transition: all 2s;
+    /*Transicion cuando el mouse se coloca sobre ese item*/
+}
+
+h1:hover {
+    /*caracteristicas de la transicion*/
+    font-size: $tamañofuente;
+}
+
+h2 {
+    /*caracteristicas del titulo del html visible para el usuario*/
+    color: #D1D1D1;
+    text-align: center;
+    font-size: $tamañofuente /2;
+    /*se aplico operacion*/
+}
+
+h3 {
+    /*caracteristicas del titulo de la seccion*/
+    color: #9C8EA9;
+    text-align: center;
+    margin-top: 5%;
+    font-size: $tamañofuente -300;
+    /*se aplico operacion*/
+}
+
+h4 {
+    /*caracteristicas del titulo del item*/
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: $tamañofuente -350;
+    /*se aplico operacion*/
+}
+
+div {
+    color: rgb(167, 177, 221);
+    /*caracteristicas dentro de los div*/
+}
+
+p {
+    /*caracteristicas del texto p*/
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    /*eliminar viñetas y numeros de las listas*/
+}
+
+#carousel {
+    max-width: 600px;
+    .carousel-inner {
+        margin-top: 2rem;
+    }
+}
+
+.sectionEnIndex {
+    /*caracteristicas del contenedor de las seciones en index*/
+    align-items: center;
+    margin: 2rem 2rem;
+    div img {
+        display: block;
+        /*pasar elemento en linea a bloque*/
+        margin: auto;
+        /*margen en auto para poder centrar el elemento*/
+    }
+    .btn-primary {
+        color: whitesmoke;
+        background-color: #9C8EA9;
+        border-color: #9C8EA9;
+        width: 67%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.sectionEnArtistas {
+    /*caracteristicas del contenedor flex de las secciones en artistas*/
+    align-items: center;
+    margin: 2rem 2rem;
+    div iframe {
+        display: block;
+        /*pasar elemento en linea a bloque*/
+        margin: auto;
+        /*margen en auto para poder centrar el elemento*/
+        width: 350px;
+        height: 200px;
+    }
+    div img {
+        display: block;
+        /*pasar elemento en linea a bloque*/
+        margin: auto;
+        /*margen en auto para poder centrar el elemento*/
+    }
+}
+
+.sectionEnBlog {
+    /*caracteristicas del contenedor flex de las secciones en blog*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+    div img {
+        display: block;
+        /*pasar elemento en linea a bloque*/
+        margin: auto;
+        /*margen en auto para poder centrar el elemento*/
+    }
+}
+
+.navEnFAQ {
+    /*caracteristicas del contenedor flex del nav en FAQ*/
+    display: flex;
+    flex-direction: column;
+    /*apilar los items en columna*/
+}
+
+@media screen and (min-width: 320px) {
+    .form {
+        grid-template-columns: repeat(1, 400PX);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .form {
+        grid-template-columns: repeat(1, 600PX);
+    }
+}
+
+.form {
+    /*caracteristicas del contenedor para grid del formulario*/
+    display: grid;
+    grid-template-rows: repeat(8, 100px);
+    /* 8 filas */
+    margin: 0 auto;
+    justify-content: center;
+    .form__nombre {
+        /*caracteristicas del subcontenedor para grid */
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+    }
+    .form__apellido {
+        /*caracteristicas del subcontenedor para grid */
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+    }
+    .form__email {
+        /*caracteristicas del subcontenedor para grid */
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: column;
+    }
+    .form__comonosconociste {
+        /*caracteristicas del subcontenedor para grid */
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: column;
+    }
+    .form__comentarios {
+        /*caracteristicas del subcontenedor para grid */
+        grid-column: 1/2;
+        grid-row: 5/7;
+        display: flex;
+        flex-direction: column;
+    }
+    .form__Newsletter {
+        /*caracteristicas del subcontenedor para grid */
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .form__Enviar {
+        /*caracteristicas del subcontenedor para grid */
+        grid-column: 1/2;
+        grid-row: 8/9;
+        margin: 0 auto;
+        .btn-primary {
+            color: whitesmoke;
+            background-color: #9C8EA9;
+            border-color: #9C8EA9;
+        }
+    }
+    label {
+        /*tamaño de fuente de los labels del formulario */
+        font-size: 150%;
+    }
+}
+
+.card {
+    background-color: whitesmoke;
+    .btn-primary {
+        color: whitesmoke;
+        background-color: #9C8EA9;
+        border-color: #9C8EA9;
+    }
+}
+
+.footer {
+    /*caracteristicas del contenedor para flex del pie de pagina */
+    background-color: black;
+    padding: 2rem;
+    p {
+        /*caracteristicas del texto p dentro del pie de pagina*/
+        color: #D1D1D1;
+    }
+    img {
+        margin: 0 10px;
+        width: 30px;
+        height: 40px;
+    }
+}
